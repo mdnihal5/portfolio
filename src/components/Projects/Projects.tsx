@@ -1,6 +1,8 @@
 import { Eye, Github } from "lucide-react";
 const TechStack = [
-    "ci ci-html","ci ci-css","ci ci-js","ci ci-expressjs bg-white rounded-full","ci ci-nodejs","ci ci-mongodb","ci ci-ts",
+    ["ci ci-html","ci ci-css","ci ci-js","ci ci-expressjs bg-white rounded-full","ci ci-nodejs","ci ci-mongodb","ci ci-ts"],
+    ["ci ci-html","ci ci-css","ci ci-js"],
+    ["ci ci-html","ci ci-css","ci ci-js","ci ci-ts"]
 ];
 
 const Projects = () => {
@@ -35,7 +37,7 @@ const Projects = () => {
                         <h3 className="text-lg font-bold text-white">{item.title}</h3>
                         <p className="text-[1em] text-white py-2">{item.description}</p>
                         <div className="w-full h-4 text-white">
-                            TechStack Used: {TechStack.map((stack, i) => (
+                            TechStack Used: {TechStack[key].map((stack, i) => (
                                 <i key={i} className={`${stack} text-3xl text-white`}></i>
                             ))}
                         </div>

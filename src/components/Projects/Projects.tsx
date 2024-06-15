@@ -6,20 +6,20 @@ const TechStack = [
 const Projects = () => {
     const projects = [
         {
-            title: "A resource Management Website Where Users can Add/Remove resource/resumes",
-            description: "Something about Project 1",
+            title: "CodeX",
+            description: "A resource Management Website Where Users can Add/Remove resource/resumes",
             link: "https://codex-mern.vercel.app",
             code: "https://github.com/mdnihal5/codex",
         },
         {
-            title: "Take A snapshot of your codeforces profile ,make using codeforces api",
-            description: "Something about Project 2",
+            title: "codeforces-snapshot",
+            description: "Take A snapshot of your codeforces profile ,make using codeforces api",
             link: "https://codeforces-card.vercel.app/",
             code: "https://github.com/mdnihal5/Codeforces-Card",
         },
         {
-            title: "My Porfolio Website crafted  with acertinity ui and tailwind",
-            description: "Something about Project 3",
+            title: "portfolio",
+            description: "My Porfolio Website crafted  with acertinity ui and tailwind",
             link: "https://nihal-dev.vercel.app/",
             code: "https://github.com/mdnihal5/portfolio",
         },

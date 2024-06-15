@@ -20,7 +20,7 @@ const Projects = () => {
         {
             title: "My Porfolio Website crafted  with acertinity ui and tailwind",
             description: "Something about Project 3",
-            link: "nihal-dev.vercel.app",
+            link: "https://nihal-dev.vercel.app/",
             code: "https://github.com/mdnihal5/portfolio",
         },
     ];

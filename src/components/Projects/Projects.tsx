@@ -1,21 +1,24 @@
 import { Eye, Github } from "lucide-react";
+const TechStack = [
+    "ci ci-html","ci ci-css","ci ci-js","ci ci-expressjs bg-white rounded-full","ci ci-nodejs","ci ci-mongodb","ci ci-ts",
+];
 
 const Projects = () => {
     const projects = [
         {
-            title: "Project 1",
+            title: "A resource Management Website Where Users can Add/Remove resource/resumes",
             description: "Something about Project 1",
             link: "https://codex-mern.vercel.app",
             code: "https://github.com/mdnihal5/codex",
         },
         {
-            title: "Project 2",
+            title: "Take A snapshot of your codeforces profile ,make using codeforces api",
             description: "Something about Project 2",
             link: "https://codeforces-card.vercel.app/",
             code: "https://github.com/mdnihal5/Codeforces-Card",
         },
         {
-            title: "Project 3",
+            title: "My Porfolio Website crafted  with acertinity ui and tailwind",
             description: "Something about Project 3",
             link: "nihal-dev.vercel.app",
             code: "https://github.com/mdnihal5/portfolio",
@@ -30,7 +33,12 @@ const Projects = () => {
 
                     <div className="grid gap-1 p-4">
                         <h3 className="text-lg font-bold text-white">{item.title}</h3>
-                        <p className="text-sm text-white">{item.description}</p>
+                        <p className="text-[1em] text-white py-2">{item.description}</p>
+                        <div className="w-full h-4 text-white">
+                            TechStack Used: {TechStack.map((stack, i) => (
+                                <i key={i} className={`${stack} text-3xl text-white`}></i>
+                            ))}
+                        </div>
                         <div className="flex gap-2 mt-2">
                             <a
                                 href={item.link}

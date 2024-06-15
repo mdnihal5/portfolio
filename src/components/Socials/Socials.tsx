@@ -9,14 +9,14 @@ const handleCopy = () => {
     toast.success("email copied successfully");
 };
 const icons = [
-    { icon: "ci-github w-6", delay: 0, link: "https://github.com/mdnihal5", name: "github" },
+    { icon: "ci-github w-6 bg-white rounded-full", delay: 0, link: "https://github.com/mdnihal5", name: "github" },
     { icon: "ci-linkedin w-6", delay: 0.5, link: "https://linkedin.com/in/mdnihal05", name: "linkedin" },
     { icon: "ci-discord w-6", delay: 1.5, link: "https://discord.com/users/997531619105714297", name: "discord" },
     { icon: "ci-gmail  w-6", delay: 2, link: "/", name: "email" },
 ];
 const Socials: React.FC = () => {
     return (
-        <div className="flex w-30 items-center justify-center mt-14 gap-4 ">
+        <div className="z-40 flex w-30 items-center justify-center mt-14 gap-4 ">
             {icons.map((icon, index) => (
                 <motion.div
                     key={index}

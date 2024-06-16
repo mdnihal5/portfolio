@@ -1,8 +1,8 @@
 import { Eye, Github } from "lucide-react";
 const TechStack = [
-    ["ci ci-html","ci ci-css","ci ci-js","ci ci-expressjs bg-white rounded-full","ci ci-nodejs","ci ci-mongodb","ci ci-ts"],
-    ["ci ci-html","ci ci-css","ci ci-js"],
-    ["ci ci-html","ci ci-css","ci ci-js","ci ci-ts"]
+    ["ci ci-html","ci ci-css","ci ci-js","ci ci-react","ci ci-expressjs bg-white rounded-full","ci ci-nodejs","ci ci-mongodb","ci ci-ts"],
+    ["ci ci-html","ci ci-css","ci ci-js","ci ci-react"],
+    ["ci ci-html","ci ci-css","ci ci-js","ci ci-ts","ci ci-react"]
 ];
 
 const Projects = () => {

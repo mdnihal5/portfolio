@@ -14,6 +14,8 @@ const navItems = [
 const App = () => (
     <>
         <HeroHighlight>
+        {    
+}
             <motion.div
                 initial={{
                     opacity: 0,

@@ -8,7 +8,7 @@ const ContactMe: React.FC = () => {
         e.preventDefault();
 
         if (form.current) {
-            emailjs.sendForm(import.meta.env.VITE_SERVICE_KEY,VITE_TEMPLATE_KEY, form.current,import.meta.env.VITE_PUBLIC_KEY).then(
+            emailjs.sendForm(import.meta.env.VITE_SERVICE_KEY,import.meta.env.VITE_TEMPLATE_KEY, form.current,import.meta.env.VITE_PUBLIC_KEY).then(
                 () => {
                     toast.success("email sent successfully");
                 },

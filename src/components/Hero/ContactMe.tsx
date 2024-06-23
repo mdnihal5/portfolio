@@ -25,7 +25,7 @@ const ContactMe: React.FC = () => {
                 <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
                 <form ref={form} onSubmit={sendEmail} className="mx-auto text-lg">
                     <div className="mb-4">
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                        <label htmlFor="name" className="block text-sm font-medium text-white">
                             Name
                         </label>
                         <input
@@ -33,11 +33,11 @@ const ContactMe: React.FC = () => {
                             id="name"
                             name="user_name"
                             required
-                            className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            className="mt-1 block w-full px-3 py-2 bg-slate-800 text-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                        <label htmlFor="email" className="block text-sm font-medium text-white">
                             Email
                         </label>
                         <input
@@ -45,11 +45,11 @@ const ContactMe: React.FC = () => {
                             id="email"
                             name="user_email"
                             required
-                            className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            className="mt-1 block w-full px-3 py-2 bg-slate-800 text-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                        <label htmlFor="message" className="block text-sm font-medium text-white">
                             Message
                         </label>
                         <textarea
@@ -57,7 +57,7 @@ const ContactMe: React.FC = () => {
                             name="message"
                             rows={5}
                             required
-                            className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            className="mt-1 block w-full px-3 py-2 bg-slate-800 text-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                     </div>
                     <div className="flex justify-end">

@@ -28,17 +28,18 @@ const Skills: React.FC = () => {
 
     const renderSkills = (skills: Skill[]) => {
         return skills.map((skill, index) => (
-            <div key={index} className="flex justify-center gap-4 items-center p-2 bg-gray-900 rounded-lg shadow-md ring-2 ring-gray-700 ring-opacity-75">
-                <i className={`${skill.iconClass}  text-3xl text-white`}></i>
-                <span className="text-sm text-white">{skill.name}</span>
-                {skill?.link ? (
-                    <Link to={skill?.link} target="_blank">
-                        <MyLink />
-                    </Link>
-                ) : (
-                    ""
-                )}
-            </div>
+            <>
+                {skill.link?<Link to={skill?.link} target="_blank">
+                <div key={index} className="flex justify-center gap-4 items-center p-2 bg-gray-900 rounded-lg shadow-md ring-2 ring-gray-700 ring-opacity-75">
+                    <i className={`${skill.iconClass}  text-3xl text-white`}></i>
+                    <span className="text-sm text-white">{skill.name}</span>
+                    <MyLink/>
+                </div>
+                </Link>:<div key={index} className="flex justify-center gap-4 items-center p-2 bg-gray-900 rounded-lg shadow-md ring-2 ring-gray-700 ring-opacity-75">
+                    <i className={`${skill.iconClass}  text-3xl text-white`}></i>
+                    <span className="text-sm text-white">{skill.name}</span>
+                </div>}
+            </>
         ));
     };
 
